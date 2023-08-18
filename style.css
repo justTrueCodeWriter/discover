@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+input{outline:none;border:none;}
+#searchBox {
+	background-color: #262626;
+	font-family: 'Inconsolata', monospace;
+	text-align: center;
+	font-size: 30px;
+	color: #FFBA86;
+	border: transparent;
+}
