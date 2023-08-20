@@ -1,13 +1,29 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Discover</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">	
 	</head>
 	<body style="background-color: #262626">
 		<div align="center">
 			<img src="marcus-aurelius.png" width="500" hight="500"><br><br>
-			<input id="searchBox" type="search" autofocus placeholder="Get knowledge">
+			<input id="searchBox" type="search" list="searchList" autofocus placeholder="Get knowledge"><br>
+			<a id="searchLink" hidden></a>
+			<datalist id="searchList">
+				<option>:archwiki:</option>
+				<option>:google:</option>
+				<option>:duckduckgo:</option>
+				<option>:yandex:</option>
+				<option>:youtube:</option>
+			</datalist>
+			<script src="logic.js"></script>
+			<script>
+				document.getElementById("searchBox").addEventListener("keydown", event => { if (event.key == "Enter")
+						search();
+					})
+			</script>
 		</div>
 	</body>
 </html>
