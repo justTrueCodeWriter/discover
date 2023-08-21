@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<title>Discover</title>
+		<link rel="icon" type="image/x-icon" href="img/discover-colored.png">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css">	
+		<link rel="stylesheet" href="src/style.css">	
 	</head>
 	<body style="background-color: #262626">
 		<div align="center">
-			<a href="https://github.com/justTrueCodeWriter/discover"><img src="marcus-aurelius.png" width="500" hight="500"></a><br><br>
+			<a href="https://github.com/justTrueCodeWriter/discover"><img src="img/marcus-aurelius.png" width="500" hight="500"></a><br><br>
 			<input id="searchBox" type="search" list="searchList" autofocus placeholder="Get knowledge"><br>
 			<a id="searchLink" hidden></a>
 			<datalist id="searchList">
@@ -18,7 +19,7 @@
 				<option>:yandex:</option>
 				<option>:youtube:</option>
 			</datalist>
-			<script src="logic.js"></script>
+			<script src="src/logic.js"></script>
 			<script>
 				document.getElementById("searchBox").addEventListener("keydown", event => { if (event.key == "Enter")
 						search();
