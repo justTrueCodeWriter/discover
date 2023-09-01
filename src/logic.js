@@ -3,7 +3,8 @@ searchEngines = [{name: ":archiveorg:", url: "https://archive.org/search?query="
 					{name: ":duckduckgo:", url: "https://duckduckgo.com/?q="}, 
 					{name: ":google:", url: "https://www.google.com/search?q="}, 
 					{name: ":yandex:", url: "https://yandex.ru/search/?text="}, 
-					{name: ":youtube:", url: "https://www.youtube.com/results?search_query="}];
+					{name: ":youtube:", url: "https://www.youtube.com/results?search_query="},
+					{name: ":ytmusic:", url: "https://music.youtube.com/search?q="}];
 
 function loadCompletionList() {
 
