@@ -29,6 +29,10 @@ function search() {
 		}
 	}
 
+  if (searchValue.includes(".")) {
+    searchLink.href = searchValue;
+  }
+
 	document.getElementById("searchLink").click();
 
 }
