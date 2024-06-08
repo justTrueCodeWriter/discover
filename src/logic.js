@@ -22,14 +22,16 @@ function search() {
 	searchValue = document.getElementById("searchBox").value;
 	searchLink = document.getElementById("searchLink");
 
+	isSearchEngine = false;
 	for (i=0; i < searchEngines.length; i++) {
 		if (searchValue.includes(searchEngines[i].name)) {
 			searchValue = searchValue.replace(searchEngines[i].name, "")
 			searchLink.href = searchEngines[i].url + searchValue;
+			isSearchEngine = true;
 		}
 	}
 
-  if (searchValue.includes(".")) {
+  if (isSearchEngine == false && searchValue.includes("http")) {
     searchLink.href = searchValue;
   }
   else {

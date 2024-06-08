@@ -6,6 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="src/style.css">	
+			<script src="src/logic.js"></script>
 	</head>
 	<body onload="loadCompletionList()" style="background-color: #262626">
 		<div align="center">
@@ -13,7 +14,6 @@
 			<input id="searchBox" type="search" list="searchList" autofocus placeholder="Get knowledge"><br>
 			<a id="searchLink" hidden></a>
 			<datalist id="searchList"></datalist>
-			<script src="src/logic.js"></script>
 			<script>
 				document.getElementById("searchBox").addEventListener("keydown", event => { if (event.key == "Enter")
 						search();
