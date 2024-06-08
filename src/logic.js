@@ -32,6 +32,9 @@ function search() {
   if (searchValue.includes(".")) {
     searchLink.href = searchValue;
   }
+  else {
+    searchLink.href = "https://search.brave.com/search?q=" + searchValue;
+  }
 
 	document.getElementById("searchLink").click();
 
