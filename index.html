@@ -16,7 +16,8 @@
 			<datalist id="searchList"></datalist>
 			<script>
 				document.getElementById("searchBox").addEventListener("keydown", event => { if (event.key == "Enter")
-						search();
+						setupSearch();
+	          document.getElementById("searchLink").click();
 					})
 			</script>
 		</div>

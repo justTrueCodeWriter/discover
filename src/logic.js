@@ -17,7 +17,7 @@ function loadCompletionList() {
 
 }
 
-function search() {
+function setupSearch() {
 
 	searchValue = document.getElementById("searchBox").value;
 	searchLink = document.getElementById("searchLink");
@@ -31,13 +31,16 @@ function search() {
 		}
 	}
 
-  if (isSearchEngine == false && searchValue.includes("http")) {
+  if (isSearchEngine) {
+    return
+  }
+  else if (isSearchEngine == false && searchValue.includes("http")) {
     searchLink.href = searchValue;
+    return
   }
   else {
     searchLink.href = "https://search.brave.com/search?q=" + searchValue;
   }
 
-	document.getElementById("searchLink").click();
 
 }
